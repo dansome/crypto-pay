@@ -27,7 +27,7 @@ const CommunityBlock = () => {
                         </div>
                     </GridCol>
                 </GridRow>
-                <Link href={'https://t.me/CryptoPayDevRU'} className={styles.communityBlock__button}>
+                <Link href={'https://t.me/CryptoPayDevRU'} target='_blank' className={styles.communityBlock__button}>
                     <Button title={'Open Devs chat'}></Button>
                 </Link>
             </Grid>

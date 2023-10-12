@@ -22,7 +22,7 @@ export const HeroBlock = () => {
                                         <br />
                                         in your Telegram bots and services.
                                     </p>
-                                    <Link href={'#how-to-start'}><Button className={styles.heroBlock__titleButton} title="Get started" /></Link>
+                                    <a href={'#how-to-start'}><Button className={styles.heroBlock__titleButton} title="Get started" /></a>
                                 </div>
                             </div>
                             <div className={styles.bots}>

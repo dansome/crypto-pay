@@ -16,6 +16,7 @@
 
     &__links {
         display: flex;
+        font-size: 20px;
 
         a {
             display: flex;
@@ -34,10 +35,12 @@
     &__actions {
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     &__themeButton {
-        margin-right: 8px;
+        position: absolute;
+        left: -48px;
     }
 }
 
