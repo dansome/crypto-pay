@@ -1,0 +1,41 @@
+.paymentStatistics {
+    background-image: url('/png/animations/payment-statistics/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex: 1;
+
+    &__img {
+        width: 430px;
+        height: 430px;
+        position: relative;
+    }
+
+    img {
+        opacity: 0;
+        transition: opacity .2s;
+        transform: translateZ(0) translateY(-50%);
+        height: auto !important;
+        top: 50% !important;
+
+        &.show {
+            opacity: 1;
+            transition: none;
+        }
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .paymentStatistics {
+        &__img {
+            width: 271px;
+            height: 281px;
+        }
+    }
+}

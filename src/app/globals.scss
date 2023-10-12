@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+  --gap-l: 32px;
+  --max-width: 1200px;
+  --page-pd: 20px;
+  --background: #fff;
+  --text-color: var(--dark);
+  --subtext-color: var(--dark-80);
+  --light-text-color: var(--dark-40);
+  --accent-bg: var(--bg-light);
+  --accent-bg-hover: #eff2f5;
+  --gradient-blue: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+  --bg-light: #f7f9fb;
+  --blue-12: rgba(41, 126, 226, 0.12);
+  --dark: #0d0d12;
+  --dark-40: rgba(17, 17, 17, 0.4);
+  --dark-80: rgba(17, 17, 17, 0.8);
+  --dark-blue: rgba(35, 35, 40, 1);
+  --deep-blue: #297ee2;
+  --general: #41A4DF;
+  --white-24: rgba(255, 255, 255, 0.24);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --step-gradient: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+  --bg-yellow: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
+  --bg-blue: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
+  --bg-pink: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+  --bg-purple: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
+
+  --breakpoint-xs: 414px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1440px;
+
+  --h1-fs: 80px;
+  --h2-fs: 56px;
+  --h3-fs: 42px;
+  --h4-fs: 32px;
+  --base-fs: 20px;
+  --base-lh: 24px;
+  --button-font: "Inter", Helvetica 500 20px/24px;
+  --button-color: #fff;
+  --desc-font: 500 14px/16px "Inter", Helvetica;
+}
+
+[data-theme='dark'] {
+  --background: var(--dark);
+  --text-color: #fff;
+  --accent-bg: #18181D;
+  --accent-bg-hover: #1d1d24;
+  --step-gradient: #fff;
+  --subtext-color: var(--white-80);
+  --light-text-color: var(--white-40);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  color: var(--general);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--h1-fs);
+}
+
+h2 {
+  font-size: var(--h2-fs);
+}
+
+h3 {
+  font-size: var(--h3-fs);
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --h1-fs: 46px;
+    --h2-fs: 32px;
+    --h3-fs: 28px;
+    --h4-fs: 24px;
+    --base-fs: 18px;
+    --base-lh: 22px;
+  }
+}

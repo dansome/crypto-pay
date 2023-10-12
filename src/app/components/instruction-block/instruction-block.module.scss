@@ -1,0 +1,139 @@
+.instructionBlock {
+    background-color: var(--accent-bg);
+    padding: 120px var(--page-pd);
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__titleAccent {
+        color: var(--general);
+    }
+
+    &__step {
+        padding-top: 20px;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__stepInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__stepDescription {
+        color: var(--subtext-color);
+        margin-top: 20px;
+    }
+
+    &__stepNumber {
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+        box-shadow: 0px 0px 8px 0px rgba(182, 186, 191, 0.04), 0px 2px 3px 0px rgba(0, 0, 0, 0.02);
+        color: var(--accent-bg);
+        margin-bottom: 20px;
+    }
+
+    &__stepVisual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        width: 100%;
+        position: relative;
+        min-height: 488px;
+
+        &_purple {
+            background: var(--bg-purple);
+        }
+
+        &_yellow {
+            background: var(--bg-yellow);
+        }
+
+        &_blue {
+            background: var(--bg-blue);
+        }
+    }
+
+    &__stepVisualImg {
+        max-width: 88%;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__listItem {
+        &+& {
+            margin-top: 8px;
+        }
+    }
+
+    &__listItemAccent {
+        color: var(--general);
+        font-weight: 400;
+    }
+}
+
+[data-theme='dark'] {
+    .instructionBlock {
+        &__stepNumber {
+            background: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .instructionBlock {
+        padding: 32px var(--page-pd);
+
+        &__title {
+            margin-bottom: 4px;
+        }
+
+        &__step {
+            flex-direction: column-reverse;
+
+            &:nth-child(odd) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__stepVisual {
+            min-height: 388px;
+        }
+
+        &__stepInfo {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .instructionBlock {
+
+        &__stepNumber {
+            width: 36px;
+            height: 36px;
+            s
+            h3 {
+                font-size: var(--h4-fs);
+            }
+        }
+
+        &__stepVisual {
+            min-height: 278px;
+        }
+    }
+
+}

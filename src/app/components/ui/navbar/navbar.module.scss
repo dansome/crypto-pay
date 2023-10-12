@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px var(--page-pd);
+    background: var(--background);
+
+    &__inner {
+        display: flex;
+        max-width: var(--max-width);
+        justify-content: space-between;
+        width: 100%;
+        max-width: var(--max-width);
+    }
+
+    &__links {
+        display: flex;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 16px;
+            color: inherit;
+            transition: color .2s;
+
+            &:hover {
+                color: var(--general);
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    &__themeButton {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        &__links {
+            display: none;
+        }
+    }
+}

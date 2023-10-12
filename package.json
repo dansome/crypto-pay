@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "2.0.0",
+    "next": "13.5.3",
+    "next-intl": "^2.20.2",
+    "next-themes": "0.2.1",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "react-indiana-drag-scroll": "2.2.0",
+    "sass": "1.68.0"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "typescript": "latest"
   }
 }

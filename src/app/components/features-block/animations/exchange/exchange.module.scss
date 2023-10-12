@@ -1,0 +1,268 @@
+.exchange {
+    &__currRow {
+        display: flex;
+        align-items: center;
+        width: 376px;
+        position: relative;
+    }
+
+    &__curr {
+        width: 34px;
+    }
+
+    &__usd {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__currImgBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity .2s;
+    }
+
+    &__currImg {
+        border-radius: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 96px;
+        height: 96px;
+        transition: all .3s;
+        border: 4px solid var(--background);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_USDT {
+            &.active {
+                animation: usdt 3s;
+
+                .exchange__currImgBg {
+                    animation: usdtBg 3s;
+                }
+            }
+
+            .exchange__currImgBg {
+                background: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
+            }
+        }
+
+        &_TON {
+            &.active {
+                animation: ton 3s;
+
+                .exchange__currImgBg {
+                    animation: tonBg 3s;
+                }
+            }
+
+            .exchange__currImgBg {
+                background: linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%);
+                opacity: 0;
+            }
+        }
+
+        &_BTC {
+            &.active {
+                animation: btc 3s;
+
+                .exchange__currImgBg {
+                    animation: btcBg 3s;
+                }
+            }
+
+            .exchange__currImgBg {
+                background: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
+            }
+        }
+    }
+
+    &__icon {
+        background-image: url('/svg/btn-change.svg');
+        background-position: center;
+        background-size: contain;
+        width: 43px;
+        height: 26px;
+        position: relative;
+        z-index: 6;
+        margin-left: 50px;
+        margin-right: -10px;
+    }
+}
+
+@keyframes ton {
+    from {
+        left: 0;
+        z-index: 3;
+    }
+
+    16% {
+        left: -68px;
+        z-index: 1;
+    }
+
+    32% {
+        left: -68px;
+        z-index: 1;
+    }
+
+    48% {
+        left: -34px;
+        z-index: 2;
+    }
+
+    64% {
+        left: -34px;
+        z-index: 2;
+    }
+
+    100% {
+        left: 0;
+        z-index: 3;
+    }
+}
+
+@keyframes usdt {
+    from {
+        left: 0;
+        z-index: 1;
+    }
+
+    16% {
+        left: 34px;
+        z-index: 2;
+    }
+
+    32% {
+        left: 34px;
+        z-index: 2;
+    }
+
+    48% {
+        z-index: 3;
+        left: 68px;
+    }
+
+    64% {
+        z-index: 3;
+        left: 68px;
+    }
+
+    100% {
+        z-index: 1;
+        left: 0;
+    }
+}
+
+@keyframes btc {
+    from {
+        z-index: 2;
+        left: 0;
+    }
+
+    16% {
+        z-index: 3;
+        left: 34px;
+    }
+
+    32% {
+        z-index: 3;
+        left: 34px;
+    }
+
+    48% {
+        z-index: 2;
+        left: -34px;
+    }
+
+    64% {
+        z-index: 2;
+        left: -34px;
+    }
+
+    100% {
+        z-index: 2;
+        left: 0;
+    }
+}
+
+@keyframes tonBg {
+    from {
+        opacity: 0;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    32% {
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 1;
+    }
+
+    64% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes usdtBg {
+    from {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    32% {
+        opacity: 1;
+    }
+
+    48% {
+        opacity: 0;
+    }
+
+    64% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes btcBg {
+    from {
+        opacity: 1;
+    }
+
+    16% {
+        opacity: 0;
+    }
+
+    32% {
+        opacity: 0;
+    }
+
+    48% {
+        opacity: 1;
+    }
+
+    64% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

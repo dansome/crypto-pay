@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  color: var(--text-color);
+  font-size: var(--base-fs);
+  line-height: var(--base-lh);
+  background: var(--background);
+}

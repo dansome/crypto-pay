@@ -1,0 +1,95 @@
+$primary: var(--general);
+$gap-s: 12px;
+
+.button {
+    display: inline-flex;
+    padding: 18px 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: var(--general, #41A4DF);
+    color: var(--button-color, #FFF);
+    font: var(--button-font);
+    border: none;
+    transition: background .2s;
+    cursor: pointer;
+
+    .loader {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    &:disabled {
+        opacity: .7;
+        cursor: default;
+    }
+
+    &:hover {
+        &:not(:disabled) {
+            background: var(--deep-blue);
+        }
+    }
+
+    &.secondary {
+        background: var(--blue-12);
+        color: var(--deep-blue);
+
+        &:hover {
+            &:not(:disabled) {
+                background: var(--blue_16);
+            }
+        }
+
+    }
+
+    &.transparent {
+        border: 1px solid var(--white-60);
+        background: transparent;
+        color: #fff;
+        transition: border .2s;
+
+        &:hover {
+            background: transparent;
+            border-color: #fff;
+        }
+    }
+
+    &.link {
+        background-color: transparent;
+        color: #fff;
+        opacity: .8;
+
+        &_accent {
+            color: $primary;
+        }
+
+        &:focus {
+            &:not(disabled) {
+                background-color: transparent;
+            }
+        }
+
+        &:hover {
+            background-color: transparent;
+            opacity: 1;
+        }
+    }
+}
+
+[data-theme='dark'] {
+    .button {
+        &.secondary {
+            border: 1px solid var(--white-60);
+            background: transparent;
+            color: #fff;
+            transition: border .2s;
+
+            &:hover {
+                background: transparent;
+                border-color: #fff;
+            }
+        }
+    }
+}

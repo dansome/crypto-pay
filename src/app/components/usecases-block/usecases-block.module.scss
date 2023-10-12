@@ -1,0 +1,132 @@
+.usecasesBlock {
+    background: var(--dark-blue);
+    padding: 0 calc(var(--page-pd) / 2);
+    display: flex;
+    justify-content: center;
+
+    &__slider {
+        position: relative;
+        height: 880px;
+        color: #fff;
+        display: flex;
+        user-select: none;
+        max-width: var(--max-width);
+        width: 100%;
+        overflow: hidden;
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__pagination {
+        display: inline-flex;
+        height: 408px;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: 5;
+        transform: translateY(-50%);
+    }
+
+    &__info,
+    &__visual {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__infoAccent {
+        color: var(--Blue, var(--general));
+        white-space: pre-wrap;
+    }
+
+    &__infoText {
+        color: #fff;
+        margin-bottom: 32px;
+        white-space: pre-wrap;
+        padding-right: 32px;
+    }
+
+    &__infoDesc {
+        margin-bottom: 32px;
+        padding-right: 32px;
+    }
+
+    &__slideRow {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &__visualContent {
+        border-radius: 40px;
+        height: 488px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.pink {
+            background: var(--bg-pink);
+        }
+
+        &.yellow {
+            background: var(--bg-yellow);
+        }
+
+        &.blue {
+            background: var(--bg-blue);
+        }
+    }
+}
+
+[data-theme='dark'] {
+    .usecasesBlock {
+        background: var(--accent-bg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .usecasesBlock {
+        &__slider {
+            height: 750px;
+        }
+
+        &__slideRow {
+            display: block;
+            width: 100%;
+        }
+
+        &__slide {
+            padding-bottom: 64px;
+            text-align: center;
+        }
+
+        &__visual {
+            align-items: center;
+            margin: 32px 0;
+        }
+
+        &__info {
+            margin: 32px 0;
+        }
+
+        &__visualContent {
+            width: 335px;
+            height: 335px;
+            max-width: 100%;
+        }
+
+        &__infoText {
+            padding-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &__infoDesc {
+            padding-right: 0;
+            flex-shrink: 0;
+            min-height: 66px;
+        }
+    }
+}

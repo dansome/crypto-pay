@@ -1,0 +1,94 @@
+.sendCoins {
+    width: 474px;
+    height: 358px;
+    background-image: url('/png/animations/send-coins/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__img {
+        position: absolute;
+        top: 72px;
+        left: 37px;
+        opacity: 0;
+
+        &:nth-child(1) {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        &.slideOut {
+            animation: slideOutFade .3s both;
+            z-index: 9;
+        }
+
+        &.slideIn {
+            animation: slideInFade .3s both;
+            z-index: 10;
+        }
+    }
+}
+
+[data-theme='dark'] {
+    .sendCoins {
+        background-image: url('/png/animations/send-coins/bg_dark.png');
+    }
+}
+
+@keyframes slideInFade {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(15%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+@keyframes slideOutFade {
+    from {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+    to {
+        opacity: .5;
+        transform: scale(0.9) translateY(-15%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sendCoins {
+        width: 253px;
+        height: 198px;
+
+        &__img {
+            left: 20px;
+            top: 38px;
+            width: 212px !important;
+            height: 66px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .sendCoins {
+        width: 216px;
+        height: 165px;
+
+        &__img {
+            left: 20px;
+            top: 38px;
+            width: 180px !important;
+            height: auto !important;
+        }
+    }
+}

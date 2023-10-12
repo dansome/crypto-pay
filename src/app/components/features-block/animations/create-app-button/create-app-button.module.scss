@@ -1,0 +1,105 @@
+.createAppButton {
+    --button-bg-pressed: linear-gradient(240deg, rgba(41, 126, 226, 0.18) 3.57%, rgba(24, 97, 182, 0.18) 86.24%);
+    --button-bg: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+
+    position: relative;
+    width: 376px;
+    max-width: 100%;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__button {
+        display: flex;
+        position: relative;
+        bottom: 24px;
+        padding: 18px 39px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 17px;
+        color: var(--text-color);
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        background: var(--button-bg);
+        position: relative;
+    }
+
+    &__arrow {
+        position: absolute;
+        z-index: 2;
+        right: 37px;
+        bottom: 6px;
+        width: 45.802px;
+        height: 48.738px;
+        stroke: #F1F5F9;
+    }
+
+    &.active {
+        .createAppButton__button {
+            animation: button 2s 100ms ease-in-out infinite;
+        }
+
+        .createAppButton__arrow {
+            animation: arrow 2s ease-in-out infinite;
+        }
+    }
+}
+
+[data-theme='dark'] {
+    .createAppButton {
+        --button-bg-pressed: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+        --button-bg: var(--gradient-blue);
+        
+        &__button {
+            background: var(--button-bg);
+        }
+    }
+}
+
+@keyframes arrow {
+    0% {
+        right: 37px;
+        bottom: 6px;
+    }
+
+    20% {
+        right: 107px;
+        bottom: 41px;
+    }
+
+    80% {
+        right: 107px;
+        bottom: 41px;
+    }
+
+    100% {
+        right: 37px;
+        bottom: 6px;
+    }
+}
+
+@keyframes button {
+    0% {
+        scale: 1;
+    }
+
+    20% {
+        background: var(--button-bg-pressed);
+    }
+
+    40% {
+        scale: 1.05;
+    }
+
+    60% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1;
+        background: var(--button-bg);
+    }
+}
