@@ -28,19 +28,19 @@ export const HeroBlock = () => {
                             <div className={styles.bots}>
                                 <div className={styles.heroBlock__botsPhotos}>
                                     <div className={styles.heroBlock__bot}>
-                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/Ellipse 1.png" />
+                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/1.png" />
                                     </div>
                                     <div className={styles.heroBlock__bot}>
-                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/Ellipse 2.png" />
+                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/2.png" />
                                     </div>
                                     <div className={styles.heroBlock__bot}>
-                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/Ellipse 3.png" />
+                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/3.png" />
                                     </div>
                                     <div className={styles.heroBlock__bot}>
-                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/Ellipse 4.png" />
+                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/4.png" />
                                     </div>
                                     <div className={styles.heroBlock__bot}>
-                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/Ellipse 5.png" />
+                                        <Image width={96} height={96} alt="Ellipse" src="/png/bots/5.png" />
                                     </div>
                                 </div>
                                 <div>Popular bots use Crypto Pay</div>
