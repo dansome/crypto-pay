@@ -2,8 +2,8 @@
     &__currRow {
         display: flex;
         align-items: center;
-        width: 376px;
         position: relative;
+        justify-content: center;
     }
 
     &__curr {
@@ -90,6 +90,7 @@
         z-index: 6;
         margin-left: 50px;
         margin-right: -10px;
+        flex-shrink: 0;
     }
 }
 

@@ -47,13 +47,13 @@ const InstructionBlock = () => {
                             </div>
                             <div className={styles.instructionBlock__list}>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>URL query string</Link></div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>• URL query string</Link></div>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>application/json</Link></div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>• application/json</Link></div>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>application/x-www-form-urlencoded</Link></div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>• application/x-www-form-urlencoded</Link></div>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>multipart/form-data</Link></div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#authorizing-your-app'}>• multipart/form-data</Link></div>
                             </div>
                         </div>
                     </GridCol>
@@ -73,9 +73,9 @@ const InstructionBlock = () => {
                             </div>
                             <div className={styles.instructionBlock__list}>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#getInvoices'}>getInvoices</Link> method to get a list of created invoices.</div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#getInvoices'}>• getInvoices</Link> method to get a list of created invoices.</div>
                                 <div className={styles.instructionBlock__listItem}>
-                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#webhooks'}>Webhooks</Link> to receive updates in realtime.</div>
+                                    <Link target='_blank' href={'https://help.crypt.bot/crypto-pay-api#webhooks'}>• Webhooks</Link> to receive updates in realtime.</div>
                             </div>
                         </div>
                     </GridCol>
